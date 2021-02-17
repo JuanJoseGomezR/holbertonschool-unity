@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1d0ae146e8f1179f58d9b46fb865877d85535a64e12693c69cd005db8f24f6b
-size 334
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Axis {
+    public const string HORIZONTAL = "Horizontal";
+    public const string VERTICAL = "Vertical";
+}
+
+public class MouseAxis {
+    public const string MOUSE_X = "Mouse X";
+    public const string MOUSE_Y = "Mouse Y";
+
+}

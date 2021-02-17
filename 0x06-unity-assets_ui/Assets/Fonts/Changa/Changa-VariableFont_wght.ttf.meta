@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68a946fa923b8f80d8cdeaea6161c0062a54e9f32d427b34e2837523602a9479
-size 972
+fileFormatVersion: 2
+guid: 9f7da5369d0fec94d934e6569a888f4d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Changa
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 292ca2432be8c28479e7ef74a3e2c2ea, type: 3}
+  - {fileID: 12800000, guid: be620153446ecc8449c0773f30bb80ee, type: 3}
+  - {fileID: 12800000, guid: ddf75fb310956984dbed5251b4d6028d, type: 3}
+  - {fileID: 12800000, guid: 26ebf358d2289714498ff1e89d04bf0a, type: 3}
+  - {fileID: 12800000, guid: 881ac8face70a8247a6e465b9e1b2757, type: 3}
+  - {fileID: 12800000, guid: f1bb19ccf13154a4caed363f86574939, type: 3}
+  - {fileID: 12800000, guid: 6383d0cfaaf9305419dcb5dc3400984b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2690adca72700e17b9bbecafb6abc0b79f73bd2ab803a0fc9bbc04ba73e90d2f
-size 325
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Green_leafs
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.529412 0.427451
+Ks 0.330000 0.330000 0.330000
+
+newmtl Water
+Ka 0.000000 0.000000 0.000000
+Kd 0.674510 0.913725 0.937255
+Ks 0.330000 0.330000 0.330000
+

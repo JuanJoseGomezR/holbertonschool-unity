@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf9eff1dcf27a64898cc68309d97bfe8f2d54513e11f64f07d5a36ebafb77e4a
-size 748
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class MainMenu : MonoBehaviour
+{
+    public Button level01;
+
+    public Button level02;
+
+    public Button level03;
+
+    public Button OptionsButton;
+
+    public Button Exit;
+
+    public void LevelSelect(int level)
+    {
+        SceneManager.LoadScene(level);
+    }
+
+    public void Options()
+    {
+        PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+    }
+    public void ExitGame()
+    {
+        Debug.Log("Exited");
+        Application.Quit();
+    }
+}

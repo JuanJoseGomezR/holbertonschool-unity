@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ae224071283379168c9426a558c9fda2d70b034e33dcd0d349971303b4698f9
-size 846
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System;
+
+/// <summary> Class Timer, handles time </summary>
+public class Timer : MonoBehaviour
+{
+    /// <summary> UI Text </summary>
+    public Text timeText;
+    /// <summary> Time in float </summary>
+    public float timer;
+    int MinuteCount;
+    int SecondCount;
+    float MilliCount;
+
+    void Start()
+    {
+        timer = 0.0f;
+    }
+    
+    // Update is called once per frame
+    void Update()
+    {
+        timer += 1 * Time.deltaTime;
+        MinuteCount = (int)timer/ 60;
+        SecondCount = (int)timer% 60;
+        MilliCount += Time.deltaTime * 100;
+        if (MilliCount >= 100)
+        {
+            MilliCount = 0;
+        }
+    
+        timeText.text = string.Format("{0:0}:{1:00}.{2:00}", MinuteCount, SecondCount, MilliCount);   
+    }
+}

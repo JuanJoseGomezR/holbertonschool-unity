@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:976211a3ca96318b0f71d55feb8a8b3e312f746d0ccda489888fa676fad79466
-size 754
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class OptionsMenu : MonoBehaviour
+{
+    public Button BackButton;
+
+    public Toggle invertAxis;
+
+    void Start()
+    {
+        if (PlayerPrefs.GetInt("isInverted") == 1)
+            invertAxis.isOn = true;
+        else
+            invertAxis.isOn = false;
+    }
+    public void Back()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetString("lastScene"));
+    }
+
+    public void Apply()
+    {
+        if (invertAxis.isOn)
+            PlayerPrefs.SetInt("isInverted", 1);
+        else
+            PlayerPrefs.SetInt("isInverted", 0);
+        
+        Back();
+    }
+
+}

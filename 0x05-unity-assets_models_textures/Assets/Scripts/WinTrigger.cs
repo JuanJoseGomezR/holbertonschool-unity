@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64bc9806d1db1afa07f169cab80555084487e6e8c16e53d42435a73b47f60157
-size 459
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+public class WinTrigger : MonoBehaviour
+{
+    public GameObject player;
+    public Text TimerText;
+    // Start is called before the first frame update
+    private void OnTriggerEnter(Collider other) 
+    {
+        player.GetComponent<Timer>().enabled = false;
+        TimerText.fontSize = 80;
+        TimerText.color = Color.green;
+    }
+}
