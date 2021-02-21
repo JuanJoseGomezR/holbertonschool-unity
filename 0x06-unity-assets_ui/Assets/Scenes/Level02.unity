@@ -6202,7 +6202,7 @@ PrefabInstance:
     - target: {fileID: 1710056818, guid: 93f76d56e23a9a54faafdd7b39d61a28, type: 3}
       propertyPath: PauseCanvas
       value: 
-      objectReference: {fileID: 1893879549}
+      objectReference: {fileID: 0}
     - target: {fileID: 5538310916608232277, guid: 93f76d56e23a9a54faafdd7b39d61a28, type: 3}
       propertyPath: timeText
       value: 
@@ -9145,7 +9145,7 @@ Transform:
   m_Children:
   - {fileID: 1170278148}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -93.209, z: 0}
 --- !u!1001 &1864673624
 PrefabInstance:
@@ -9235,6 +9235,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1096874529056009572, guid: 0bd1f3f7deb45d54aba219f892a76728, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5043271996717089279, guid: 0bd1f3f7deb45d54aba219f892a76728, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -9357,11 +9361,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bd1f3f7deb45d54aba219f892a76728, type: 3}
---- !u!223 &1893879549 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 5043271998062525656, guid: 0bd1f3f7deb45d54aba219f892a76728, type: 3}
-  m_PrefabInstance: {fileID: 1893879548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1910473717
 PrefabInstance:
   m_ObjectHideFlags: 0
