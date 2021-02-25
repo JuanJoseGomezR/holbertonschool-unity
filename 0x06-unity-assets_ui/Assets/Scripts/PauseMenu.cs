@@ -55,6 +55,10 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetString("lastScene", SceneManager.GetActiveScene().name);
-        SceneManager.LoadScene("Options");
+        SceneManager.LoadScene(1);
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
