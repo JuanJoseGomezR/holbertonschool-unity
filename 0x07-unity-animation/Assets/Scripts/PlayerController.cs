@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private float playerSpeed = 4.0f;
-    private float jumpHeight = 4.0f;
+    private float jumpHeight = 2.0f;
     private float gravityValue = -9.81f;
     [SerializeField] private Transform player;
 

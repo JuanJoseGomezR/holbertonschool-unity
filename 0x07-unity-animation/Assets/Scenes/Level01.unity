@@ -10863,7 +10863,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: bd4c6c63aa03dfc47a300e7620bdd88c, type: 2}
     - target: {fileID: 2141072150758601917, guid: 93f76d56e23a9a54faafdd7b39d61a28, type: 3}
       propertyPath: m_CullingMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2141072150758601917, guid: 93f76d56e23a9a54faafdd7b39d61a28, type: 3}
       propertyPath: m_UpdateMode
@@ -10961,6 +10961,10 @@ PrefabInstance:
       propertyPath: groundLayers.m_Bits
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5538310916608232283, guid: 93f76d56e23a9a54faafdd7b39d61a28, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 5866666021909216657, guid: dd78cc9231634294c929c0f3a6b3ff8d, type: 3}
     - target: {fileID: 5538310916608232284, guid: 93f76d56e23a9a54faafdd7b39d61a28, type: 3}
       propertyPath: m_Name
       value: Player

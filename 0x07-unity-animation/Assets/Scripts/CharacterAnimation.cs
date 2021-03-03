@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System.Dynamic;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +16,10 @@ public class CharacterAnimation : MonoBehaviour
     // Update is called once per frame
      void Update()
     {
+        if (Input.GetButtonDown("Jump"))
+        {
+            anim.SetTrigger("isJumping");
+        }
         if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
         {
             anim.SetBool("isRunning", true);
