@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class OptionsMenu : MonoBehaviour
 {
     public Button BackButton;
-
-    public AudioSource songs;
-
-    public AudioClip BGM;
+    public AudioMixer masterMixer;
 
     public Toggle invertAxis;
 
@@ -34,6 +32,17 @@ public class OptionsMenu : MonoBehaviour
             PlayerPrefs.SetInt("isInverted", 0);
         
         Back();
+    }
+
+    public void SetSfxLvl(float sfxLvl)
+    {
+        masterMixer.SetFloat("sfxVol", sfxLvl);
+        masterMixer.SetFloat("ambienceVol", sfxLvl);
+    }
+
+    public void SetMusicLvl(float musicLvl)
+    {
+        masterMixer.SetFloat("musicVol", musicLvl);
     }
 
 }
