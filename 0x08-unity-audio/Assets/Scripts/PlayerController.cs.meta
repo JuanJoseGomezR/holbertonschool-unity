@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 96acd9b55600df94daf91ced73b7152c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - runGrassSteps: {fileID: 8300000, guid: fe5cd3b46f0ff3a4c9788a3f1236f7ce, type: 3}
+  - footStepsAudios: {fileID: 223188009516365279, guid: d0aa1449505f263478a1a6edbcc346c9, type: 3}
+  - player: {fileID: 5538310916608232280, guid: 93f76d56e23a9a54faafdd7b39d61a28, type: 3}
+  - Respawn: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
